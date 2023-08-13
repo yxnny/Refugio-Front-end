@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+    
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    
+}
+
+
+
+@media only screen and (min-width:440px){
+    .container {
+        margin-right: 5px;
+        margin-left: 5px;
+        background: linear-gradient(to bottom, #BDEBF7, #77AFF9);
+        border-radius: 13px 13px;
+    }
+    
+    .titulo1{
+        /* Margin externo
+        paddin intenro */
+        padding-top: 95px; 
+        font-family: Montserrat-Bold;
+        color: #2c4674;
+        text-align: center;
+        font-size: 36px;
+        
+    }
+    .titulo2{
+        margin-left:150px ;
+        font-family: Montserrat-Medium;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 36px;
+        
+        
+    }
+
+   
+   
+    p{
+        padding-top: 70px;
+        text-align: center;
+        font-family: Montserrat-Medium;
+        font-size: 18px;
+        color: #2c4674;
+    }
+
+    /* silder radio */
+    #img1{
+        display:block;
+        width: 100%;
+        position: relative;
+        border-bottom-left-radius: 13px;
+   
+    }
+    
+    #img2{
+        width: 100%;
+        display:none;
+        border-bottom-right-radius: 13px;
+        border-bottom-left-radius: 13px;
+        /* Punto de arraque animacion */
+        position: relative;
+        
+        
+    }
+
+    @keyframes example{
+        /* Ubicaicon 0 comienzo 100 termina, el top es para ocultarlo */
+        0%  { left:0px; top:200px;}
+        100% { left:0px; top:0px;}
+    }
+    
+    .botones-inicio{
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    /* Botones */
+    #prueba{
+        
+        border-radius: 50%;
+        background: #4A6DAD;
+        border: none;
+        height: 11px;
+        width: 11px;
+    } 
+    #prueba2{
+        
+        border-radius: 50%;
+        background: #ffffff;
+        border: none;
+        height: 11px;
+        width: 11px;
+    }
+    #prueba2, #prueba:hover{
+        cursor: pointer;
+        
+    }
+    
+    #boton1{
+        position: absolute;
+        /* queda fijo */
+        top:115%;
+        left: 45%;
+        background-color: #4A6DAD;
+        border-radius: 50%;
+        border: none;
+        z-index: 1;
+    }
+    
+    #boton1:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        
+    }
+    #flecha:hover{
+        transition-duration: 0.5s;
+        transform: rotate(90deg);
+    }
+
+
+   
+}
+
+
+
